@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="#todo of todoService.getItems(); #i=index">
+    {{todo}} <span><a href="#" style="padding-left: 30px;" (click)="removeItem(i)">X</a></span>
+  </li>
+</ul>
